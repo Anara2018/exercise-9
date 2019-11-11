@@ -1,0 +1,22 @@
+{
+    "read_files": "( example_data/output/FASTQtrimmed/SRR1039508_R1_val_1.fq.gz, example_data/output/FASTQtrimmed/SRR1039508_R2_val_2.fq.gz )",
+    "expected_format": "IU",
+    "compatible_fragment_ratio": 1.0,
+    "num_compatible_fragments": 221,
+    "num_assigned_fragments": 221,
+    "num_frags_with_consistent_mappings": 8,
+    "num_frags_with_inconsistent_or_orphan_mappings": 219,
+    "strand_mapping_bias": 0.25,
+    "MSF": 0,
+    "OSF": 0,
+    "ISF": 6,
+    "MSR": 0,
+    "OSR": 0,
+    "ISR": 2,
+    "SF": 114,
+    "SR": 105,
+    "MU": 0,
+    "OU": 0,
+    "IU": 0,
+    "U": 0
+}

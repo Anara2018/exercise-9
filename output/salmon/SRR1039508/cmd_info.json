@@ -1,0 +1,14 @@
+{
+    "salmon_version": "0.10.2",
+    "index": "example_data/reference/SalmonIndex/Homo_sapiens.GRCh38",
+    "libType": "A",
+    "mates1": "example_data/output/FASTQtrimmed/SRR1039508_R1_val_1.fq.gz",
+    "mates2": "example_data/output/FASTQtrimmed/SRR1039508_R2_val_2.fq.gz",
+    "output": "example_data/output/salmon/SRR1039508",
+    "seqBias": [],
+    "gcBias": [],
+    "fldMean": "250",
+    "fldSD": "25",
+    "threads": "1",
+    "auxDir": "aux_info"
+}

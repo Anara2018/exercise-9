@@ -1,0 +1,145 @@
+STAR version=2.7.3a
+STAR compilation time,server,dir=Tue Oct 8 14:26:19 EDT 2019 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+##### Command Line:
+STAR --genomeDir example_data/reference/STARIndex/Homo_sapiens.GRCh38.93.STAR.idx --readFilesIn example_data/output/FASTQtrimmed/SRR1039513_R1_val_1.fq.gz example_data/output/FASTQtrimmed/SRR1039513_R2_val_2.fq.gz --runThreadN 1 --outFileNamePrefix example_data/output/STAR/SRR1039513/SRR1039513_ --outSAMtype BAM SortedByCoordinate --readFilesCommand gunzip -c
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 example_data/output/STAR/SRR1039513/SRR1039513_
+###### All USER parameters from Command Line:
+genomeDir                     example_data/reference/STARIndex/Homo_sapiens.GRCh38.93.STAR.idx     ~RE-DEFINED
+readFilesIn                   example_data/output/FASTQtrimmed/SRR1039513_R1_val_1.fq.gz   example_data/output/FASTQtrimmed/SRR1039513_R2_val_2.fq.gz        ~RE-DEFINED
+runThreadN                    1     ~RE-DEFINED
+outFileNamePrefix             example_data/output/STAR/SRR1039513/SRR1039513_     ~RE-DEFINED
+outSAMtype                    BAM   SortedByCoordinate        ~RE-DEFINED
+readFilesCommand              gunzip   -c        ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runThreadN                        1
+genomeDir                         example_data/reference/STARIndex/Homo_sapiens.GRCh38.93.STAR.idx
+readFilesIn                       example_data/output/FASTQtrimmed/SRR1039513_R1_val_1.fq.gz   example_data/output/FASTQtrimmed/SRR1039513_R2_val_2.fq.gz   
+readFilesCommand                  gunzip   -c   
+outFileNamePrefix                 example_data/output/STAR/SRR1039513/SRR1039513_
+outSAMtype                        BAM   SortedByCoordinate   
+
+-------------------------------
+##### Final effective command line:
+STAR   --runThreadN 1   --genomeDir example_data/reference/STARIndex/Homo_sapiens.GRCh38.93.STAR.idx   --readFilesIn example_data/output/FASTQtrimmed/SRR1039513_R1_val_1.fq.gz   example_data/output/FASTQtrimmed/SRR1039513_R2_val_2.fq.gz      --readFilesCommand gunzip   -c      --outFileNamePrefix example_data/output/STAR/SRR1039513/SRR1039513_   --outSAMtype BAM   SortedByCoordinate   
+----------------------------------------
+
+
+   Input read files for mate 1, from input string example_data/output/FASTQtrimmed/SRR1039513_R1_val_1.fq.gz
+-rw-r--r-- 1 rstudio rstudio 2319361 Nov 11 11:12 example_data/output/FASTQtrimmed/SRR1039513_R1_val_1.fq.gz
+
+   readsCommandsFile:
+exec > "example_data/output/STAR/SRR1039513/SRR1039513__STARtmp/tmp.fifo.read1"
+echo FILE 0
+gunzip   -c      "example_data/output/FASTQtrimmed/SRR1039513_R1_val_1.fq.gz"
+
+
+   Input read files for mate 2, from input string example_data/output/FASTQtrimmed/SRR1039513_R2_val_2.fq.gz
+-rw-r--r-- 1 rstudio rstudio 2333135 Nov 11 11:12 example_data/output/FASTQtrimmed/SRR1039513_R2_val_2.fq.gz
+
+   readsCommandsFile:
+exec > "example_data/output/STAR/SRR1039513/SRR1039513__STARtmp/tmp.fifo.read2"
+echo FILE 0
+gunzip   -c      "example_data/output/FASTQtrimmed/SRR1039513_R2_val_2.fq.gz"
+
+WARNING: --limitBAMsortRAM=0, will use genome size as RAM limit for BAM sorting
+Finished loading and checking parameters
+Reading genome generation parameters:
+### STAR   --runMode genomeGenerate   --runThreadN 1   --genomeDir example_data/reference/STARIndex/Homo_sapiens.GRCh38.93.STAR.idx   --genomeFastaFiles example_dataset/reference/Homo_sapiens.GRCh38.dna.chromosome.22.fa      --sjdbGTFfile example_dataset/reference/Homo_sapiens.GRCh38.98.chr22.gtf   --sjdbOverhang 63
+### GstrandBit=32
+versionGenome                 2.7.1a     ~RE-DEFINED
+genomeFastaFiles              example_dataset/reference/Homo_sapiens.GRCh38.dna.chromosome.22.fa        ~RE-DEFINED
+genomeSAindexNbases           14     ~RE-DEFINED
+genomeChrBinNbits             18     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+sjdbOverhang                  63     ~RE-DEFINED
+sjdbFileChrStartEnd           -        ~RE-DEFINED
+sjdbGTFfile                   example_dataset/reference/Homo_sapiens.GRCh38.98.chr22.gtf     ~RE-DEFINED
+sjdbGTFchrPrefix              -     ~RE-DEFINED
+sjdbGTFfeatureExon            exon     ~RE-DEFINED
+sjdbGTFtagExonParentTranscripttranscript_id     ~RE-DEFINED
+sjdbGTFtagExonParentGene      gene_id     ~RE-DEFINED
+sjdbInsertSave                Basic     ~RE-DEFINED
+genomeFileSizes               51885779   331497469        ~RE-DEFINED
+Genome version is compatible with current STAR
+Number of real (reference) chromosomes= 1
+1	22	50818468	0
+--sjdbOverhang = 63 taken from the generated genome
+Started loading the genome: Mon Nov 11 11:12:56 2019
+
+Genome: size given as a parameter = 51885779
+SA: size given as a parameter = 331497469
+SAindex: size given as a parameter = 1
+Read from SAindex: pGe.gSAindexNbases=14  nSAi=357913940
+nGenome=51885779;  nSAbyte=331497469
+GstrandBit=32   SA number of indices=80363022
+Shared memory is not used for genomes. Allocated a private copy of the genome.
+Genome file size: 51885779 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 51885779 bytes
+SA file size: 331497469 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 331497469 bytes
+Loading SAindex ... done: 1565873619 bytes
+Finished loading the genome: Mon Nov 11 11:13:00 2019
+
+Processing splice junctions database sjdbN=8109,   pGe.sjdbOverhang=63 
+alignIntronMax=alignMatesGapMax=0, the max intron size will be approximately determined by (2^winBinNbits)*winAnchorDistNbins=589824
+Starting to map file # 0
+mate 1:   example_data/output/FASTQtrimmed/SRR1039513_R1_val_1.fq.gz
+mate 2:   example_data/output/FASTQtrimmed/SRR1039513_R2_val_2.fq.gz
+Thread #0 end of input stream, nextChar=-1
+BAM sorting: 16345 mapped reads
+BAM sorting bins genomic start loci:
+1	0	11608774
+2	0	15216199
+3	0	15812143
+4	0	16479936
+5	0	17059130
+6	0	17569111
+7	0	18342753
+8	0	19320261
+9	0	19792594
+10	0	19792913
+11	0	20907861
+12	0	21708830
+13	0	22800385
+14	0	23996076
+15	0	24744419
+16	0	25572165
+17	0	28086385
+18	0	28554658
+19	0	28944490
+20	0	29660632
+21	0	30515273
+22	0	31026252
+23	0	31566950
+24	0	32282075
+25	0	33211489
+26	0	34551848
+27	0	34822615
+28	0	36081509
+29	0	36995039
+30	0	37584881
+31	0	37935799
+32	0	38590950
+33	0	39353980
+34	0	40106359
+35	0	40106715
+36	0	40106920
+37	0	40744377
+38	0	41138299
+39	0	41555006
+40	0	41735358
+41	0	42453928
+42	0	42980538
+43	0	44018283
+44	0	45156695
+45	0	46285606
+46	0	48406993
+47	0	50056008
+48	0	50798686
+Completed: thread #0
+Nov 11 11:19:05 ..... started sorting BAM
+Max memory needed for sorting = 74439
+ALL DONE!

@@ -1,0 +1,60 @@
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: example_data/FASTQ/SRR1039512_R1.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.4
+Cutadapt version: 2.6
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Unable to auto-detect most prominent adapter from the first specified file (count smallRNA: 0, count Nextera: 0, count Illumina: 0)
+Defaulting to Illumina universal adapter ( AGATCGGAAGAGC ). Specify -a SEQUENCE to avoid this behavior).
+Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; default (inconclusive auto-detection))
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Output file will be GZIP compressed
+
+
+This is cutadapt 2.6 with Python 3.6.8
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGC example_data/FASTQ/SRR1039512_R1.fastq.gz
+Processing reads on 1 core in single-end mode ...
+Finished in 1.14 s (23 us/read; 2.62 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  49,712
+Reads with adapters:                    15,943 (32.1%)
+Reads written (passing filters):        49,712 (100.0%)
+
+Total basepairs processed:     3,131,856 bp
+Quality-trimmed:                  31,766 bp (1.0%)
+Total written (filtered):      3,079,364 bp (98.3%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 15943 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 24.4%
+  C: 23.6%
+  G: 19.7%
+  T: 32.4%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	12163	12428.0	0	12163
+2	2985	3107.0	0	2985
+3	607	776.8	0	607
+4	168	194.2	0	168
+5	20	48.5	0	20
+
+RUN STATISTICS FOR INPUT FILE: example_data/FASTQ/SRR1039512_R1.fastq.gz
+=============================================
+49712 sequences processed in total
+

@@ -1,0 +1,66 @@
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: example_data/FASTQ/SRR1039509_R2.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.4
+Cutadapt version: 2.6
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Using Illumina adapter for trimming (count: 1). Second best hit was smallRNA (count: 0)
+Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Output file will be GZIP compressed
+
+
+This is cutadapt 2.6 with Python 3.6.8
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGC example_data/FASTQ/SRR1039509_R2.fastq.gz
+Processing reads on 1 core in single-end mode ...
+Finished in 1.21 s (25 us/read; 2.39 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  48,216
+Reads with adapters:                    16,146 (33.5%)
+Reads written (passing filters):        48,216 (100.0%)
+
+Total basepairs processed:     3,037,608 bp
+Quality-trimmed:                  19,627 bp (0.6%)
+Total written (filtered):      2,996,904 bp (98.7%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 16146 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 25.7%
+  C: 25.0%
+  G: 20.3%
+  T: 28.9%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	12361	12054.0	0	12361
+2	2897	3013.5	0	2897
+3	700	753.4	0	700
+4	144	188.3	0	144
+5	38	47.1	0	38
+6	2	11.8	0	2
+7	1	2.9	0	1
+11	1	0.0	1	1
+13	2	0.0	1	1 1
+
+RUN STATISTICS FOR INPUT FILE: example_data/FASTQ/SRR1039509_R2.fastq.gz
+=============================================
+48216 sequences processed in total
+
+Total number of sequences analysed for the sequence pair length validation: 48216
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 139 (0.29%)
